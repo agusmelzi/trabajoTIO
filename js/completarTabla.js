@@ -30,3 +30,12 @@ async function cargarTabla() {
     }
 
 }
+
+async function asignarItemDelete() {
+    let buttons = document.querySelectorAll("#borrarItem");
+    let res = await fetch(url);
+    let tabla = await res.json();
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener("click", () => { borrarItem(tabla[i].id) })
+    }
+}
