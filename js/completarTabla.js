@@ -39,3 +39,15 @@ async function asignarItemDelete() {
         buttons[i].addEventListener("click", () => { borrarItem(tabla[i].id) })
     }
 }
+
+async function borrarItem(idLibro) {
+    try {
+        let res = await fetch(`${url}/${idLibro}`, {
+            "method": "DELETE"
+        });
+    } catch (error) {
+        console.log(error);
+    }
+
+    cargarTabla();
+}
