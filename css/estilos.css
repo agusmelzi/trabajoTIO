@@ -130,3 +130,142 @@ h3 {
 .disposicionImagenes img {
     width: 85%;
 }
+
+
+@media only screen and (min-width: 660px) {
+
+    .btn_menu {
+        display: none;
+    }
+
+    .menu {
+        background-color: brown;
+    }
+
+    .sectorLogo {
+        padding: 10px;
+        margin: 5px 30px;
+    }
+
+    .logo {
+        font-size: 3rem;
+        font-family: 'Square Peg', cursive;
+        color: aliceblue;
+        text-decoration: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        background-color: brown;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        margin: 0px;
+    }
+
+    nav ul a {
+        text-decoration: none;
+    }
+
+    nav ul li {
+        font-family: 'Courier New', Courier, monospace;
+        color: aliceblue;
+        font-weight: bolder;
+        font-size: 1.5rem;
+        margin: 5px 30px;
+        padding: 10px;
+    }
+
+    nav ul li:hover {
+        border: 2px;
+        border-style: solid;
+        border-color: aliceblue;
+    }
+
+    .disposicionImagenes {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "img1 img2 img3 img4"
+            "img5 img6 img7 img8";
+    }
+
+    .disposicionImagenes img {
+        width: 60%;
+    }
+
+    .formulario {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "dato-form1 dato-form3"
+            "dato-form2 dato-form4"
+            "dato-form5";
+        grid-column-gap: 30px;
+    }
+
+    .formularioLogin {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "seccionFormulario1"
+            "seccionFormulario2";
+    }
+
+    .containerLibros {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-areas:
+            "tabla botonesModificarTabla";
+    }
+
+    .botonesModificarTabla {
+        display: flex;
+        flex-direction: column;
+    }
+
+    table {
+        margin-left: 90px;
+        margin-top: 20px;
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .modal-content {
+        background-color: rgb(206, 198, 198);
+        margin: 25% auto;
+        padding: 20px 100px;
+        border: 7px solid brown;
+        border-radius: 21px;
+        width: 50%;
+    }
+}
+
+
+.containerFormulario {
+    display: flex;
+    justify-content: center;
+}
+
+.formulario {
+    display: grid;
+    grid-template-areas:
+        "dato-form1"
+        "dato-form2"
+        "dato-form3"
+        "dato-form4"
+        "dato-form5";
+}
