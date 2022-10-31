@@ -39,6 +39,69 @@
         <h2>Crear cuenta</h2>
     </div>
 
+    <div class="containerFormulario">
+
+        <form class="formularioLogin">
+            <div class="seccionFormulario1">
+                <div class="dato-style">
+                    <label for="nombre">NOMBRE</label>
+                    <input type="text" name="nombre" placeholder="ej. Juan">
+                </div>
+                <div class="dato-style">
+                    <label for="apellido">APELLIDO</label>
+                    <input type="text" name="apellido" placeholder="ej. Pérez">
+                </div>
+                <div class="dato-form-sexo">
+                    <label for="sexo">SEXO</label>
+                    <ul>
+                        <li><input type="radio" name="sexo" value="varon"> Varón</li>
+                        <li><input type="radio" name="sexo" value="mujer"> Mujer</li>
+                    </ul>
+                </div>
+                <div class="dato-style">
+                    <label for="pais">PAÍS</label>
+                    <select>
+                        <option value="argentina">Argentina</option>
+                        <option value="brasil">Brasil</option>
+                        <option value="chile">Chile</option>
+                        <option value="uruguay">Uruguay</option>
+                    </select>
+                </div>
+                <div class="dato-style">
+                    <label for="email">E-MAIL</label>
+                    <input type="email" name="email" placeholder="ej. jperez@tudai.com">
+                </div>
+                <div class="dato-style">
+                    <label for="telefono">TELÉFONO</label>
+                    <input type="text" name="telefono" placeholder="ej. 2494593314">
+                </div>
+            </div>
+            <div class="seccionFormulario2">
+
+                <div class="dato-style">
+                    <label for="password">CONTRASEÑA</label>
+                    <input type="password" name="password">
+                </div>
+                <div class="dato-style">
+                    <label for="password">CONFIRMAR CONTRASEÑA</label>
+                    <input type="password" name="password">
+                </div>
+                <div class="dato-style">
+                    <button class="noSoyRobot" type="button" id="btn-generar">No soy un robot <i
+                            class="fa-solid fa-arrows-spin"></i></button>
+                    <label id="textoRandom" class="captcha" for="captcha"></label>
+                    <input id="textoAvalidar" type="text" name="captcha" placeholder="Ingrese el texto en pantalla">
+                    <button class="btn-validar" type="button" id="btn-validar">Validar</button>
+                </div>
+                <div class="resultado">
+                    <p id="resultado"></p>
+                </div>
+                <div class="submit">
+                    <input id="submit" type="hidden">
+                </div>
+            </div>
+        </form>
+    </div>
 
     <footer>
         Buscanos en todas las redes sociales
