@@ -88,3 +88,16 @@ window.addEventListener("click", function (e) {
         modal.style.display = "none";
     }
 })
+
+async function asignarItemEdit() {
+
+    let buttons = document.querySelectorAll(".editarItem");
+    let res = await fetch(url);
+    let tabla = await res.json();
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener("click", function () {
+            modal.style.display = "block";
+        });
+        buttons[i].addEventListener("click", cargarItemEditar);
+    }
+}
