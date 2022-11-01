@@ -1,0 +1,120 @@
+[33mcommit 79d5837c38937bc33f689461f27ff222d5780c32[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Merge: babcb91 2d687bf
+Author: Martin Ezequiel Acosta <acostamartin1270@gmail.com>
+Date:   Mon Oct 31 14:44:48 2022 -0300
+
+    Merge de rama alternativa local a main local
+
+[33mcommit babcb919e82c2b83236f600909b060ea22c8d1b5[m[33m ([m[1;32mMartin[m[33m)[m
+Author: Martin Ezequiel Acosta <acostamartin1270@gmail.com>
+Date:   Mon Oct 31 14:41:27 2022 -0300
+
+    +Botones de vaciar y cargar items
+
+[33mcommit 2d687bf3aa0e9f990eed3fe80e3abb19ff2b59bc[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: tamaraM <tamara.s.moya@gmail.com>
+Date:   Mon Oct 31 14:37:47 2022 -0300
+
+    se agrega funcion asignarItemEdit()
+
+[33mcommit f59b58e72e161c3a053c2d1345cd39f98d9fb883[m
+Author: tamaraM <tamara.s.moya@gmail.com>
+Date:   Mon Oct 31 14:26:49 2022 -0300
+
+    se agrega funcion nuevoIngreso
+
+[33mcommit d3aba34b237088432430d9a8e47e096043a382c0[m
+Author: Martin Ezequiel Acosta <acostamartin1270@gmail.com>
+Date:   Mon Oct 31 13:56:23 2022 -0300
+
+    +Formulario adicion de libro.
+
+[33mcommit 1d51e556f4863a20c11994ae25bc8c0d2f88f94b[m
+Author: Martin Ezequiel Acosta <acostamartin1270@gmail.com>
+Date:   Mon Oct 31 13:52:41 2022 -0300
+
+    +Libros.html, nav finalizado.
+
+[33mcommit dee5a5fb9670c8e885eda0b2ffbe330774d8697c[m
+Author: viglezziR <viglezziramiro@gmail.com>
+Date:   Mon Oct 31 12:55:03 2022 -0300
+
+    se agrego funcion borrarItem
+
+[33mcommit 7d29e2eaec5366236e8df99dd13dee06a35b0f45[m
+Author: viglezziR <viglezziramiro@gmail.com>
+Date:   Mon Oct 31 12:51:38 2022 -0300
+
+    se agrego funcion asignarItemDelete
+
+[33mcommit 8c779c5902214f5de528ea19c548f5d1e11a29a9[m
+Author: viglezziR <viglezziramiro@gmail.com>
+Date:   Mon Oct 31 12:45:11 2022 -0300
+
+    se genero archivo completarTabla.js y su funcion cargarTabla
+
+[33mcommit ed646d984df5096604e013695794b90b3a51a044[m
+Author: Agustin Melzi <aemelzi@gmail.com>
+Date:   Mon Oct 31 00:05:31 2022 -0300
+
+    agrego gitignore
+
+[33mcommit 5d3e13bc8a8f537ec024496c402a532aa77fb4a4[m
+Author: Agustin Melzi <aemelzi@gmail.com>
+Date:   Sun Oct 30 23:27:44 2022 -0300
+
+    Login: agrego formulario
+
+[33mcommit 1508f35e860f921637b307f966bceebd8d5cce5f[m
+Author: Sofia Ormazabal <sormazabal@alumnos.exa.unicen.edu.ar>
+Date:   Sun Oct 30 22:10:15 2022 -0300
+
+    Elimino archivo txt
+
+[33mcommit b7d3a2705c7e2af9c545d992696637504fd4df06[m
+Author: Sofia Ormazabal <sormazabal@alumnos.exa.unicen.edu.ar>
+Date:   Sun Oct 30 22:08:50 2022 -0300
+
+    cambio nombre de archivo txt
+
+[33mcommit 137ad4cc54f52e6654edb0ad76b3bcf7f9f296ad[m
+Author: Sofia Ormazabal <sormazabal@alumnos.exa.unicen.edu.ar>
+Date:   Sun Oct 30 22:04:57 2022 -0300
+
+    prueba de cambio de nombre
+
+[33mcommit 383c253f04eb65ca725eecbe114ad14182faaf04[m
+Author: Sofia Ormazabal <sormazabal@alumnos.exa.unicen.edu.ar>
+Date:   Sun Oct 30 22:02:17 2022 -0300
+
+    cambio nombre al txt
+
+[33mcommit 02db422c3c0463b9b153e9ad07d867db61d8e068[m
+Author: Sofia Ormazabal <sormazabal@alumnos.exa.unicen.edu.ar>
+Date:   Sun Oct 30 21:00:04 2022 -0300
+
+    Agrego las imagines a utilizar en nuestro proyecto
+
+[33mcommit 62f98caa7ef2305b7001a0bd668e8e3424fad07a[m
+Author: Sofia Ormazabal <sormazabal@alumnos.exa.unicen.edu.ar>
+Date:   Sun Oct 30 20:33:57 2022 -0300
+
+    Confección de index HTML
+
+[33mcommit 380702cc4e2274add5d9152aa91ee516b8c08d2d[m
+Author: Sofia Ormazabal <sormazabal@alumnos.exa.unicen.edu.ar>
+Date:   Sun Oct 30 20:31:15 2022 -0300
+
+    Confección de index en HTML'
+
+[33mcommit 6cf0add43c2fe68eed18a3f228868105715b6d5d[m
+Author: Agustin Melzi <aemelzi@gmail.com>
+Date:   Fri Oct 28 20:31:32 2022 -0300
+
+    Login: agrego header, nav y footer
+
+[33mcommit 97338d8593dfdb0c7b9d6b35d9c87767c72d7634[m
+Author: Agustin Melzi <aemelzi@gmail.com>
+Date:   Fri Oct 28 18:02:55 2022 -0300
+
+    primer commit

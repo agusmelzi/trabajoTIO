@@ -90,5 +90,34 @@
                 </tbody>
             </table>
         </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span id="close" class="close">&times;</span>
+                <form id="formEditarLibro">
+                    <input id="idLibro" type="hidden" name="id" required>
+                    <div class="dato-style"> <!--en el tp enviado dice 'dato-form'-->
+                        <label for="titulo">TÍTULO:</label>
+                        <input type="text" name="titulo" required id="titulo">
+                    </div>
+                    <div class="dato-style">
+                        <label for="autor">AUTOR:</label>
+                        <input type="text" name="autor" required id="autor">
+                    </div>
+                    <div class="dato-style">
+                        <label for="editorial">EDITORIAL:</label>
+                        <input type="text" name="editorial" required id="editorial">
+                    </div>
+                    <div class="dato-style">
+                        <label for="anio">AÑO:</label>
+                        <input type="number" name="anio" required id="anio">
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Editar">
+                    </div>
+                </form>
+            </div>
 
+        </div>
+    </div>
 </body>
+</html>

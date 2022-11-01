@@ -101,3 +101,21 @@ async function asignarItemEdit() {
         buttons[i].addEventListener("click", cargarItemEditar);
     }
 }
+
+async function cargarItemEditar(e) {
+
+    let res = await fetch(url);
+    let tabla = await res.json();
+    const idSeleccionado = this.dataset.id;
+    let libroSeleccionado = tabla.find(
+        function (libro) {
+            return libro.id == idSeleccionado
+        });
+
+    idLibro.value = libroSeleccionado.id;
+    titulo.value = libroSeleccionado.titulo;
+    autor.value = libroSeleccionado.autor;
+    editorial.value = libroSeleccionado.editorial;
+    anio.value = libroSeleccionado.anio;
+
+}
