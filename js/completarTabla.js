@@ -119,3 +119,48 @@ async function cargarItemEditar(e) {
     anio.value = libroSeleccionado.anio;
 
 }
+
+let formularioEditar = document.querySelector("#formEditarLibro");
+formularioEditar.addEventListener("submit", editarItem);
+
+async function editarItem(e){
+    e.preventDefault();
+    let formData = new FormData(this);
+    let ItemEditado = {
+        titulo: formData.get('titulo'),
+        autor: formData.get('autor'),
+        editorial: formData.get('editorial'),
+        anio: formData.get('anio')
+    };
+    //let res = null;
+    try {
+        let res = await fetch(`${url}/${formData.get("id")}`, { 
+            method: "PUT",
+            headers: { "Content-type": "application/json" },
+            body: JSON.stringify(ItemEditado)
+        });
+
+    } catch (error) {
+        console.log(error);
+    }
+    modal.style.display = "none";
+    cargarTabla();
+}
+
+document.querySelector("#btn-vaciarTabla").addEventListener("click", vaciarTabla);
+
+async function vaciarTabla() {
+    let res = await fetch(url);
+    let tabla = await res.json();
+    for (let libro of tabla) {
+        try {
+            let res = await fetch(`${url}/${libro.id}`, {
+                "method": "DELETE"
+            });
+        } catch (error) {
+            console.log(error);
+        }
+    }
+    cargarTabla();
+}
+
