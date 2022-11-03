@@ -447,3 +447,32 @@ td {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+.btn-validar:hover {
+    background-color: white;
+    color: brown;
+    border: 1px brown;
+    border-style: solid;
+}
+
+.resultado {
+    text-align: center;
+}
+
+.correcto {
+    background-color: green;
+    padding: 10px 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+    font-weight: bolder;
+    color: white;
+    margin: 0px 40px;
+}
+
+.incorrecto {
+    background-color: red;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+    font-weight: bolder;
+    color: white;
+}
