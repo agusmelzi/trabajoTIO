@@ -164,3 +164,21 @@ async function vaciarTabla() {
     cargarTabla();
 }
 
+document.querySelector("#btn-cargarItems").addEventListener("click", cargarItems);
+
+async function cargarItems() {
+    let libro1, libro2, libro3;
+    let libros = [libro1, libro2, libro3];
+    for (let libro of libros) {
+        try {
+            let res = await fetch(url, {
+                "method": "POST",
+                "headers": { "Content-type": "application/json" },
+                "body": JSON.stringify(libro)
+            });
+        } catch (error) {
+            console.log(error);
+        }
+    }
+    cargarTabla();
+}
