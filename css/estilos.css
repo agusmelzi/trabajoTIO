@@ -1,0 +1,406 @@
+header,
+footer {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    color: aliceblue;
+    text-align: center;
+    background-color: black;
+    padding: 14px;
+}
+
+footer {
+    margin-top: 30px;
+}
+
+nav {
+
+    background-color: brown;
+
+}
+
+.sectorLogo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-family: 'Square Peg', cursive;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.btn_menu {
+    color: white;
+    padding: 15px;
+}
+
+.btn_menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu {
+    background-color: black;
+    text-align: right;
+}
+
+nav ul {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: none;
+    flex-direction: column;
+}
+
+nav ul.show {
+    display: flex;
+}
+
+nav ul a li {
+
+    font-family: 'Courier New', Courier, monospace;
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    margin: 0px 0px;
+    padding: 15px 20px;
+}
+
+nav ul li:hover {
+    background-color: rgb(157, 157, 157);
+}
+
+nav ul a {
+    text-decoration: none;
+}
+
+h2 {
+    background-color: rgb(226, 223, 223);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 1.8rem;
+    color: brown;
+    border: 2px black;
+    border-style: dashed;
+    padding: 10px;
+}
+
+.lista {
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    list-style-image: url(../imágenes/libro2.png);
+
+}
+
+.lista ul li {
+    margin: 5px 30px;
+    padding: 0px;
+    border-bottom: 1px brown;
+    border-bottom-style: solid;
+}
+
+.lista ul li:hover {
+    background-color: rgb(211, 209, 209);
+}
+.disposicionImagenes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "img1 img2" "img3 img4"
+        "img5 img6" "img7 img8";
+    justify-items: center;
+    grid-row-gap: 20px;
+}
+
+.disposicionImagenes img {
+    width: 85%;
+}
+
+@media only screen and (min-width: 660px) {
+
+    .btn_menu {
+        display: none;
+    }
+
+    .menu {
+        background-color: brown;
+    }
+
+    .sectorLogo {
+        padding: 10px;
+        margin: 5px 30px;
+    }
+
+    .logo {
+        font-size: 3rem;
+        font-family: 'Square Peg', cursive;
+        color: aliceblue;
+        text-decoration: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        background-color: brown;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        margin: 0px;
+    }
+
+    nav ul a {
+        text-decoration: none;
+    }
+
+    nav ul li {
+        font-family: 'Courier New', Courier, monospace;
+        color: aliceblue;
+        font-weight: bolder;
+        font-size: 1.5rem;
+        margin: 5px 30px;
+        padding: 10px;
+    }
+
+    nav ul li:hover {
+        border: 2px;
+        border-style: solid;
+        border-color: aliceblue;
+    }
+
+    .disposicionImagenes {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "img1 img2 img3 img4"
+            "img5 img6 img7 img8";
+    }
+
+    .disposicionImagenes img {
+        width: 60%;
+    }
+
+    .formulario {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "dato-form1 dato-form3"
+            "dato-form2 dato-form4"
+            "dato-form5";
+        grid-column-gap: 30px;
+    }
+
+    .formularioLogin {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "seccionFormulario1"
+            "seccionFormulario2";
+    }
+
+    .containerLibros {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-areas:
+            "tabla botonesModificarTabla";
+    }
+
+    .botonesModificarTabla {
+        display: flex;
+        flex-direction: column;
+    }
+
+    table {
+        margin-left: 90px;
+        margin-top: 20px;
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .modal-content {
+        background-color: rgb(206, 198, 198);
+        margin: 25% auto;
+        padding: 20px 100px;
+        border: 7px solid brown;
+        border-radius: 21px;
+        width: 50%;
+    }
+}
+
+
+.containerFormulario {
+    display: flex;
+    justify-content: center;
+}
+
+.formulario {
+    display: grid;
+    grid-template-areas:
+        "dato-form1"
+        "dato-form2"
+        "dato-form3"
+        "dato-form4"
+        "dato-form5";
+}
+
+.formularioLogin {
+    display: grid;
+    grid-template-areas: 
+        "seccionFormulario1"
+        "seccionFormulario2";
+}
+
+.seccionFormulario1,
+.seccionFormulario2 {
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.dato-style,
+.dato-form-sexo {
+    margin-top: 10px;
+}
+
+.dato-style,
+.dato-form-sexo label {
+    font-family: 'Courier New', Courier, monospace;
+    color: brown;
+}
+
+.dato-style input {
+    width: 100%;
+    padding: 10px;
+    border: 1px brown;
+    border-style: solid;
+    border-radius: 7px;
+}
+
+.dato-form-sexo ul {
+    list-style: none;
+}
+
+.dato-style input::placeholder {
+    color: brown;
+    opacity: 0.3;
+}
+
+.dato-style select {
+    margin-top: 7px;
+    width: 100%;
+    padding: 7px;
+    border: 1px brown;
+    border-style: solid;
+    border-radius: 7px;
+}
+
+.submit {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.submit input {
+    background-color: brown;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 21px;
+    font-weight: bolder;
+    padding: 10px 20px;
+    border-radius: 14px;
+}
+
+.submit input:hover {
+    background-color: white;
+    color: brown;
+    border: 1px brown;
+    border-style: solid;
+}
+
+.containerLibros {
+    display: grid;
+    grid-template-areas:
+        "botonesModificarTabla"
+        "tabla";
+}
+
+.botonesModificarTabla {
+    display: flex;
+    justify-content: center;
+}
+
+.botonesModificarTabla button {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
+    background-color: dimgrey;
+    color: aliceblue;
+    font-size: 12px;
+    font-weight: bolder;
+    padding: 10px 20px;
+    border-radius: 14px;
+}
+
+.botonesModificarTabla button:hover {
+    background-color: white;
+    color: brown;
+    border: 1px brown;
+    border-style: solid;
+}
+
+.tabla {
+    overflow-x: auto;
+}
+
+
+
+thead {
+    background-color: brown;
+}
+
+th {
+    padding: 20px 50px;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+    font-weight: bolder;
+    border: 2px;
+    border-style: ridge;
+    border-radius: 7px;
+}
+
+tbody {
+    background-color: rgb(190, 190, 190);
+}
+
+td {
+    padding: 20px 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+    font-weight: bolder;
+    border-radius: 7px;
+}
