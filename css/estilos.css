@@ -269,3 +269,139 @@ h3 {
         "dato-form4"
         "dato-form5";
 }
+
+.formularioLogin {
+    display: grid;
+    grid-template-areas: 
+        "seccionFormulario1"
+        "seccionFormulario2";
+}
+
+.seccionFormulario1,
+.seccionFormulario2 {
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.dato-style,
+.dato-form-sexo {
+    margin-top: 10px;
+}
+
+.dato-style,
+.dato-form-sexo label {
+    font-family: 'Courier New', Courier, monospace;
+    color: brown;
+}
+
+.dato-style input {
+    width: 100%;
+    padding: 10px;
+    border: 1px brown;
+    border-style: solid;
+    border-radius: 7px;
+}
+
+.dato-form-sexo ul {
+    list-style: none;
+}
+
+.dato-style input::placeholder {
+    color: brown;
+    opacity: 0.3;
+}
+
+.dato-style select {
+    margin-top: 7px;
+    width: 100%;
+    padding: 7px;
+    border: 1px brown;
+    border-style: solid;
+    border-radius: 7px;
+}
+
+.submit {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.submit input {
+    background-color: brown;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 21px;
+    font-weight: bolder;
+    padding: 10px 20px;
+    border-radius: 14px;
+}
+
+.submit input:hover {
+    background-color: white;
+    color: brown;
+    border: 1px brown;
+    border-style: solid;
+}
+
+.containerLibros {
+    display: grid;
+    grid-template-areas:
+        "botonesModificarTabla"
+        "tabla";
+}
+
+.botonesModificarTabla {
+    display: flex;
+    justify-content: center;
+}
+
+.botonesModificarTabla button {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
+    background-color: dimgrey;
+    color: aliceblue;
+    font-size: 12px;
+    font-weight: bolder;
+    padding: 10px 20px;
+    border-radius: 14px;
+}
+
+.botonesModificarTabla button:hover {
+    background-color: white;
+    color: brown;
+    border: 1px brown;
+    border-style: solid;
+}
+
+.tabla {
+    overflow-x: auto;
+}
+
+
+
+thead {
+    background-color: brown;
+}
+
+th {
+    padding: 20px 50px;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+    font-weight: bolder;
+    border: 2px;
+    border-style: ridge;
+    border-radius: 7px;
+}
+
+tbody {
+    background-color: rgb(190, 190, 190);
+}
+
+td {
+    padding: 20px 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+    font-weight: bolder;
+    border-radius: 7px;
+}
