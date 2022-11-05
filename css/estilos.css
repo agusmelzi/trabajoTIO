@@ -476,3 +476,19 @@ td {
     font-weight: bolder;
     color: white;
 }
+
+.borrarItem {
+    background-color: black;
+    padding: 10px 30px;
+    border-radius: 14px;
+    border: none;
+}
+
+.borrarItem:hover {
+    background-color: brown;
+}
+
+.borrar {
+    color: whitesmoke;
+    font-size: large;
+}
